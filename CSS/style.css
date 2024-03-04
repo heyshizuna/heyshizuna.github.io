@@ -313,6 +313,7 @@ header .nav-item a.active::after {
   font-size: 1em;
   max-width: 350px;
   line-height: 1.3;
+  letter-spacing: 1px;
 }
 .hero .hero-container .hero-img {
   position: relative;
