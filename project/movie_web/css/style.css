@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary: #f95738;
+}
+body {
+  background: #000000;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 7%;
+  z-index: 10;
+}
+.logo {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+.nav {
+  display: flex;
+}
+.nav li {
+  margin: 0 0.7rem;
+}
+.nav li a {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav li a:hover {
+  color: var(--primary);
+}
+.search {
+  position: relative;
+  width: 200px;
+  height: 40px;
+}
+.search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background: transparent;
+  outline: none;
+  border: 0.1rem solid #ffffff8e;
+  border-radius: 0.3rem;
+  padding: 0 0.8rem 0 2.8rem !important;
+  backdrop-filter: blur(10px);
+}
+.search input::placeholder {
+  color: #ffffff;
+}
+.search i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.8rem;
+  padding-right: 0.5rem;
+  color: #ffffff;
+  border-right: 0.1rem solid #ffffff8e;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../img/Bg-little-mermaid.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000008e;
+}
+.content {
+  position: relative;
+  max-width: 550px;
+  display: none;
+  visibility: hidden;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.content.active {
+  display: block;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.movie-title {
+  max-width: 250px;
+}
+.banner .content h4 {
+  color: #ffffff8e;
+  font-weight: 400;
+  font-size: 30px;
+}
+.banner .content h4 span {
+  padding: 0 0.5rem;
+  border-right: 0.1rem solid #ffffff8e;
+}
+.banner .content h4 span:first-child {
+  padding-left: 0;
+}
+.banner .content h4 span:last-child {
+  border-right: none;
+}
+.banner .content h4 span i {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 0 0.5rem;
+  border-radius: 0.2rem;
+}
+.banner .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #ffffff;
+  margin: 10px 0 20px;
+}
+.banner .content .button {
+  position: relative;
+}
+.banner .content .button a {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.5rem;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.banner .content .button a:nth-child(2) {
+  background: #0000008e;
+  border: 0.1rem solid #ffffff33;
+}
+.banner .content .button a:hover:nth-child(2) {
+  background: var(--primary);
+}
+.banner .carousel-box {
+  position: relative;
+  min-width: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000033;
+  box-shadow: 20px 20px 50px #0000008e;
+  border: 0.1rem solid #ffffff1a;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+.banner .carousel-box .carousel {
+  position: relative;
+  height: 550px;
+  perspective: 1500px;
+}
+.banner .carousel-box .carousel .carousel-item {
+  width: 250px;
+  cursor: pointer;
+}
+.banner .carousel-box .carousel .carousel-item img {
+  max-width: 235px;
+  border-radius: 10px;
+  transform: translateX(8px) translateY(-60px);
+  object-fit: cover;
+  object-position: center;
+}
+.play {
+  position: absolute;
+  bottom: 3rem;
+  left: 5rem;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.play i {
+  margin-right: 0.5rem;
+  font-size: 2.5rem;
+  cursor: pointer !important;
+}
+.play:hover {
+  color: var(--primary);
+}
+.sci {
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.sci li {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sci li:hover {
+  color: var(--primary);
+}
+.trailer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.trailer.active {
+  visibility: visible;
+  opacity: 1;
+}
+.trailer video {
+  max-width: 900px;
+  outline: none;
+}
+.close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  filter: invert(1);
+  max-width: 30px;
+}
+/* @media screen and (max-width: 1439px) {
+  .content {
+    max-width: 700px;
+  }
+  .banner .content .button a:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+  .banner .carousel-box {
+    min-width: 800px;
+  }
+}
+@media screen and (max-width: 1201px) {
+  .content {
+    max-width: 800px;
+  }
+  .banner .carousel-box {
+    min-width: 700px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .content {
+    max-width: 900px;
+  }
+  .banner .content .button a {
+    margin-top: 1rem;
+  }
+  .banner .carousel-box {
+    min-width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-wrap: wrap;
+  }
+  .content {
+    margin-top: 6rem;
+    max-width: 700px;
+  }
+  .banner .carousel-box {
+    min-width: 670px;
+  }
+  .banner .carousel-box .carousel {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner {
+    overflow: visible;
+    background-position: top left;
+  }
+  .content {
+    margin-top: 4rem;
+  }
+  .banner .carousel-box {
+    min-width: 500px;
+  }
+  .banner .carousel-box .carousel {
+    height: 400px;
+    perspective: 1000px;
+  }
+  .banner .carousel-box .carousel .carousel-item img {
+    max-width: 200px;
+  }
+} */

@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefae0;
+  color: #274c77;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #fefae0;
+  z-index: 11;
+}
+
+.play,
+.pause,
+.end,
+.restart,
+.hint {
+  width: 200px;
+  padding: 16px 0;
+  color: #ffffff;
+  background-color: #8b8c89;
+  border: none;
+  border-bottom: 5px solid #274c77;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.play:hover,
+.pause:hover,
+.end:hover,
+.restart:hover,
+.hint:hover {
+  color: #8b8c89;
+  background-color: #f2f2f2;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
+}
+
+.pausePage {
+  display: none;
+  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  background-color: #262626;
+  z-index: 10;
+}
+
+.clip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fefae0;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.infomation {
+  width: 775px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  width: 90px;
+  height: 50px;
+  background-color: #8b8c89;
+  color: #274c77;
+  border-radius: 16px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.time {
+  width: 150px;
+}
+
+.plate {
+  width: 500px;
+  height: 500px;
+  background-color: #ebebeb;
+  border-radius: 16px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+.false {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 62%;
+  transform: translateY(0);
+  color: #c1121f;
+  font-weight: bold;
+  font-size: 43px;
+  transition: 0.5s ease-in-out;
+}
+
+.false.active {
+  display: block;
+  transform: translateY(-13px);
+}
+
+.box {
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.ans.active {
+  animation: linear 2s infinite answer;
+}
+
+@keyframes answer {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(0.3);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  75% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

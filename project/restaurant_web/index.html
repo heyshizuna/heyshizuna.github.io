@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/229a93c649.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- header and navbar -->
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-utensils"></i>X Resto.</a>
+        <nav class="navbar">
+            <a href="#home" class="active navbar-link">首頁</a>
+            <a href="#dishes" class="navbar-link">主廚推薦</a>
+            <a href="#about" class="navbar-link">關於我們</a>
+            <a href="#menu" class="navbar-link">珍饌菜單</a>
+            <a href="#review" class="navbar-link">老饕推薦</a>
+            <a href="#order" class="navbar-link">預訂餐點</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-bars" id="menu-bars"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+    <!-- search form -->
+    <form action="" id="search-form">
+        <input type="search" id="search-box" placeholder="請輸入關鍵字...">
+        <label for="search-box" class='fa-solid fa-magnifying-glass'></label>
+        <i class="fa-solid fa-xmark" id="close"></i>
+    </form>
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>本月特別推薦</span>
+                        <h3>番茄義大利麵</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn">立即預訂</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/home-1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>本月特別推薦</span>
+                        <h3>經典三素一葷</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn">立即預訂</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/home-2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>本月特別推薦</span>
+                        <h3>莓果沙拉脆餅</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn">立即預訂</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/home-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Dishes section -->
+    <section class="dishes" id="dishes">
+
+        <h3 class="sub-heading">主廚推薦</h3>
+        <h1 class="heading">招牌菜色</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fa-regular fa-heart"></a>
+                <a href="#" class="fa-regular fa-eye"></a>
+                <img src="img/dish-1.png" alt="">
+                <h3>人氣餐點</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span>$122,100</span>
+                <a href="#" class="btn">加入訂購</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fa-regular fa-heart"></a>
+                <a href="#" class="fa-regular fa-eye"></a>
+                <img src="img/dish-2.png" alt="">
+                <h3>人氣餐點</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span>$122,100</span>
+                <a href="#" class="btn">加入訂購</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fa-regular fa-heart"></a>
+                <a href="#" class="fa-regular fa-eye"></a>
+                <img src="img/dish-3.png" alt="">
+                <h3>人氣餐點</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span>$122,100</span>
+                <a href="#" class="btn">加入訂購</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fa-regular fa-heart"></a>
+                <a href="#" class="fa-regular fa-eye"></a>
+                <img src="img/dish-4.png" alt="">
+                <h3>人氣餐點</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span>$122,100</span>
+                <a href="#" class="btn">加入訂購</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fa-regular fa-heart"></a>
+                <a href="#" class="fa-regular fa-eye"></a>
+                <img src="img/dish-5.png" alt="">
+                <h3>人氣餐點</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span>$122,100</span>
+                <a href="#" class="btn">加入訂購</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fa-regular fa-heart"></a>
+                <a href="#" class="fa-regular fa-eye"></a>
+                <img src="img/dish-6.png" alt="">
+                <h3>人氣餐點</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span>$122,100</span>
+                <a href="#" class="btn">加入訂購</a>
+            </div>
+        </div>
+    </section>
+    <!-- About section -->
+    <section class="about" id="about">
+        <h3 class="sub-heading">關於我們</h3>
+        <h1 class="heading">X Resto 起源故事</h1>
+        <div class="row">
+            <div class="image">
+                <img src="img/about.png" alt="">
+            </div>
+            <div class="content">
+                <h3>為捕捉幸福笑容而生</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, velit deleniti. Voluptas repudiandae
+                    consectetur facere, quis rerum porro libero expedita, ipsa sint officiis autem necessitatibus est
+                    blanditiis! Quia, provident commodi.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque aut modi nostrum ut ullam quas
+                    accusantium. </p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>滿額免運</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>付款方式</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>聯絡客服</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">更多資訊</a>
+            </div>
+        </div>
+    </section>
+    <!-- Menu section -->
+    <section class="menu" id="menu">
+        <h3 class="sub-heading">珍饌菜單</h3>
+        <h1 class="heading">本日嚴選</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu-1.jpg" alt="">
+                    <a href="#" class="fa-regular fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>人氣餐點</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem, vitae
+                        perspiciatis nostrum.</p>
+                    <a href="#" class="btn">加入訂購</a>
+                    <span class="price">$122,100</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu-2.jpg" alt="">
+                    <a href="#" class="fa-regular fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>人氣餐點</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem, vitae
+                        perspiciatis nostrum.</p>
+                    <a href="#" class="btn">加入訂購</a>
+                    <span class="price">$122,100</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu-3.jpg" alt="">
+                    <a href="#" class="fa-regular fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>人氣餐點</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem, vitae
+                        perspiciatis nostrum.</p>
+                    <a href="#" class="btn">加入訂購</a>
+                    <span class="price">$122,100</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu-4.jpg" alt="">
+                    <a href="#" class="fa-regular fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>人氣餐點</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem, vitae
+                        perspiciatis nostrum.</p>
+                    <a href="#" class="btn">加入訂購</a>
+                    <span class="price">$122,100</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu-5.jpg" alt="">
+                    <a href="#" class="fa-regular fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>人氣餐點</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem, vitae
+                        perspiciatis nostrum.</p>
+                    <a href="#" class="btn">加入訂購</a>
+                    <span class="price">$122,100</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu-6.jpg" alt="">
+                    <a href="#" class="fa-regular fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>人氣餐點</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem, vitae
+                        perspiciatis nostrum.</p>
+                    <a href="#" class="btn">加入訂購</a>
+                    <span class="price">$122,100</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu-7.jpg" alt="">
+                    <a href="#" class="fa-regular fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>人氣餐點</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem, vitae
+                        perspiciatis nostrum.</p>
+                    <a href="#" class="btn">加入訂購</a>
+                    <span class="price">$122,100</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu-8.jpg" alt="">
+                    <a href="#" class="fa-regular fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>人氣餐點</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem, vitae
+                        perspiciatis nostrum.</p>
+                    <a href="#" class="btn">加入訂購</a>
+                    <span class="price">$122,100</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/menu-9.jpg" alt="">
+                    <a href="#" class="fa-regular fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h3>人氣餐點</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatem, vitae
+                        perspiciatis nostrum.</p>
+                    <a href="#" class="btn">加入訂購</a>
+                    <span class="price">$122,100</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Review section -->
+    <section class="review" id="review">
+        <h3 class="sub-heading">老饕推薦</h3>
+        <h1 class="heading">真實評論</h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/pic-1.png" alt="">
+                        <div class="user-info">
+                            <h3>Katharine Liz</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta quia repudiandae itaque
+                        voluptas? Vitae, quae! Dolores tempore quidem minus, doloribus ratione neque, repellendus,
+                        inventore itaque non explicabo corporis accusamus! </p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/pic-2.png" alt="">
+                        <div class="user-info">
+                            <h3>Bertran Colin</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta quia repudiandae itaque
+                        voluptas? Vitae, quae! Dolores tempore quidem minus, doloribus ratione neque, repellendus,
+                        inventore itaque non explicabo corporis accusamus! </p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/pic-3.png" alt="">
+                        <div class="user-info">
+                            <h3>Renee Viv</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta quia repudiandae itaque
+                        voluptas? Vitae, quae! Dolores tempore quidem minus, doloribus ratione neque, repellendus,
+                        inventore itaque non explicabo corporis accusamus! </p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <div class="user">
+                        <img src="img/pic-4.png" alt="">
+                        <div class="user-info">
+                            <h3>Frederick Hugh</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta quia repudiandae itaque
+                        voluptas? Vitae, quae! Dolores tempore quidem minus, doloribus ratione neque, repellendus,
+                        inventore itaque non explicabo corporis accusamus! </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Order section -->
+    <section class="order" id="order">
+        <h3 class="sub-heading">預訂餐點</h3>
+        <h1 class="heading">方便快速</h1>
+        <form action="">
+            <div class="inputBox">
+                <div class="input">
+                    <span>姓名：</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="input">
+                    <span>聯絡電話：</span>
+                    <input type="text" placeholder="">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>餐點：</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="input">
+                    <span>升級套餐：</span>
+                    <input type="text" placeholder="">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>總金額：</span>
+                    <input type="number" placeholder="">
+                </div>
+                <div class="input">
+                    <span>到貨日：</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>地址：</span>
+                    <textarea name="" placeholder="詳細地址" id="" cols="15" rows="5"></textarea>
+                </div>
+                <div class="input">
+                    <span>注意事項：</span>
+                    <textarea name="" placeholder="樓層或其他指示" id="" cols="15" rows="5"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="送出訂單" class="btn">
+        </form>
+
+    </section>
+    <!-- Footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>門市據點</h3>
+                <a href="#">Taiwan</a>
+                <a href="#">Taiwan</a>
+                <a href="#">Taiwan</a>
+                <a href="#">Taiwan</a>
+                <a href="#">Taiwan</a>
+            </div>
+            <div class="box">
+                <h3>網頁導覽</h3>
+                <a href="#home">首頁</a>
+                <a href="#dishes">主廚推薦</a>
+                <a href="#about">關於我們</a>
+                <a href="#menu">珍饌菜單</a>
+                <a href="#review">老饕推薦</a>
+                <a href="#order">預訂餐點</a>
+            </div>
+            <div class="box">
+                <h3>聯絡資訊</h3>
+                <a href="#">+014-452-7851</a>
+                <a href="#">+111-222-3333</a>
+                <a href="#">abcdefghij@email.com</a>
+                <a href="#">abcdefghij@email.com</a>
+                <a href="#">Taiwan,number-one</a>
+            </div>
+            <div class="box">
+                <h3>更多X Resto</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+        <div class="credit">Copyright @ 2023 by <span>Jing Web Designer</span></div>
+    </section>
+    <!-- Loading -->
+    <div class="loader-container">
+        <img src="img/loader.gif" alt="">
+    </div>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- JS link -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
