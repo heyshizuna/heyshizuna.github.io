@@ -1,0 +1,58 @@
+// Font //
+@font-face {
+  font-family: "main-font";
+  src: url("../assets/font/GenSenRounded-Regural.ttc"), local("Arial");
+}
+// --- light theme ---//
+:root{
+
+  --first-color: #483832;
+  --second-color: #cd9e82;
+  --third-color: #8e786b;
+  
+  --bg-color: #f9f6ee;
+  --bg-transparent-color: rgba(0, 0, 0, 0.1);
+  --transparent-color-01: rgba(0, 0, 0, 0.1);
+  
+  --card-bg-color: #ffffff;
+  --modal-bg-color: #ffffff;
+  --line-color: #d7d7d7;
+  
+  --color-filter: invert(1);
+  
+  --scroll-bar-color: #dcbba7;
+  --scroll-thumb-color: #ab9087;
+  --scroll-thumb-hover-color: #6c544b;
+}
+
+$hover-color: #bf825f;
+$transparent-color-02: rgba(205, 158, 130, 0.102);
+$box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+$small-font-size: 0.9em;
+$normal-font-size: 1em;
+
+
+// --- dark theme ---//
+body{
+&.dark-theme{
+
+--first-color: #EADCD6;
+--second-color: #cd9e82;
+--third-color: #AB9087;
+
+--bg-color: #35241C;
+--bg-transparent-color: rgba(255, 255, 255, 0.1);
+--transparent-color-01: rgba(255, 255, 255, 0.1);
+
+--card-bg-color: #5E3F31;
+--modal-bg-color: #885944;
+--line-color: #B2826C;
+
+--color-filter: invert(0);
+
+--scroll-bar-color: #CB9A7C;
+--scroll-thumb-color: #906F64;
+--scroll-thumb-hover-color: #483832;
+}
+
+}

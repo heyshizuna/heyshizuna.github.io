@@ -1,0 +1,66 @@
+header {
+  &.sticky {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: $box-shadow;
+    .nav-bar {
+      height: calc(2.5rem + 1rem);
+    }
+  }
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  transition: 0.3s ease;
+  z-index: 99;
+  .nav-bar {
+    position: relative;
+    height: calc(4rem + 1rem);
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    padding: 0 2rem;
+    transition: 0.6s ease;
+    .logo {
+      color: var(--first-color);
+      font-size: 1.3rem;
+      font-family: main-font;
+      font-weight: 700;
+    }
+  }
+  .nav-item {
+    a {
+      position: relative;
+      color: var(--first-color);
+      font-size: $normal-font-size;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 0%;
+        height: 2px;
+        background-color: var(--second-color);
+        transition: 0.5s ease;
+      }
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+      &:hover {
+        color: var(--second-color);
+      }
+      &.active {
+        color: var(--second-color);
+      }
+      &.active::after {
+        width: 100%;
+        color: var(--second-color);
+      }
+    }
+  }
+}
+.nav-menu-btn {
+  display: none;
+}

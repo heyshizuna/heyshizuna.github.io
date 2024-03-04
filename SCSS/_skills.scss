@@ -1,0 +1,112 @@
+.skills {
+  .container {
+    .content {
+      width: 100%;
+      .skills {
+        &-list {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+          max-width: 100%;
+          margin-inline: auto;
+          gap: 20px;
+        }
+        &-card {
+          background-color: var(--card-bg-color);
+          border-bottom: 3px solid var(--third-color);
+          border-radius: 6px;
+          padding: 50px;
+          text-align: center;
+          img {
+            margin-bottom: 15px;
+          }
+          h3 {
+            font-size: 1.5em;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 5px;
+          }
+          h4 {
+            font-size: $normal-font-size;
+            margin-bottom: 30px;
+          }
+          .learn-more-btn {
+            text-align: center;
+            color: var(--first-color);
+            padding: 10px;
+            background-color: var(--second-color);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            i {
+              transition: 0.3s ease;
+            }
+            &:hover {
+              i {
+                transform: translateX(10px);
+              }
+            }
+          }
+        }
+        &-modal {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          top: 0;
+          left: 0;
+          background-color: var(--bg-transparent-color);
+          backdrop-filter: blur(10px);
+          z-index: 101;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.3s ease;
+          &.active{
+           visibility: visible;
+            opacity: 1;
+            .skills-modal-body{
+              transform: translateY(0px);
+            }
+          }
+          &-body {
+            position: relative;
+            background-color: var(--modal-bg-color);
+            max-width: 600px;
+            margin: 20px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: $box-shadow;
+            transform: translateY(-50px);
+            transition: 0.3s ease;
+            .modal-close-btn{
+              position: absolute;
+              top: 0;
+              right: 0;
+              margin: 20px;
+              font-size: 1.5em;
+              cursor: pointer;
+            }
+            h3{
+              font-size: 2em;
+            }
+            h4{
+              font-size: 1.3em;
+              font-weight: 600;
+              margin-block: 15px;
+            }
+            p{
+              line-height: 1.2;
+              margin-block: 15px;
+            }
+            ul{
+              li{
+                margin-top: 15px;
+                i{
+                  color: var(--second-color);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

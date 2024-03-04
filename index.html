@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yi Jing's Protfolio</title>
+  <meta name="description" content="這是怡靜的簡介及作品集，請多指教！">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" type="image/x-icon" href="./IMG/nav/icon.svg">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="./CSS/swiper-bundle.min.css">
+  <!-- scrollreveal -->
+  <script src="./JS/scrollreveal.js"></script>
+</head>
+
+<body>
+  <!----- scroll to top ----->
+  <div class="to-top-btn flex-center">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!----- change theme ----->
+  <div class="theme-btn flex-center">
+    <i class="fa-solid fa-moon"></i>
+    <i class="fa-solid fa-sun"></i>
+  </div>
+  <!----- heaer ----->
+  <header>
+    <div class="nav-bar">
+      <a href="" class="logo">YI JING</a>
+      <div class="navigation">
+        <div class="nav-item">
+          <div class="nav-close-btn"></div>
+          <a class="active" href="#hero">首頁</a>
+          <a href="#about">關於怡靜</a>
+          <a href="#education">學歷經歷</a>
+          <a href="#skills">技能專長</a>
+          <a href="#project">專案作品</a>
+          <a href="#contact">與我聯繫</a>
+        </div>
+      </div>
+      <div class="nav-menu-btn"></div>
+    </div>
+  </header>
+  <!----- hero ----->
+  <section class="hero flex-center" id="hero">
+    <div class="hero-container">
+      <div class="media-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="info">
+        <h2>你好，我是怡靜</h2>
+        <h3>網頁設計／前端開發</h3>
+        <p>即將在網頁設計領域發光發熱的我<br>將為團隊創造更多價值。</p>
+        <a href="#contact" class="btn">與我聯繫 <i class="fa-regular fa-circle-right"></i></a>
+      </div>
+      <div class="hero-img">
+        <img src="./assets/image/hero-img.png" alt="">
+      </div>
+    </div>
+    <a href="#about" class="scroll-down">Scroll Down <i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+  <!----- about ----->
+  <section class="about section" id="about">
+    <div class="container flex-center">
+      <h1 class="section-title-01">About Chloe</h1>
+      <h2 class="section-title-02">關於怡靜</h2>
+      <div class="content flex-center">
+        <div class="about-img">
+          <img src="./assets/image/about.png" alt="">
+        </div>
+        <div class="about-info">
+          <div class="description">
+            <h3>My name is Chloe</h3>
+            <h4>畢業於台中科技大學，個性內斂待人謙和、有責任心、注重時間管理，做事細心並追求高效率。</h4>
+            <p>我從網路課程及書本中，學習基本的網頁設計知識，可以獨立完成切版後，報名了UIUX介面設計及前端工程專班，對整個網頁設計的流程有更深的了解，可以用Figma設計網頁原型，並用程式語言將網頁呈現出來。</p>
+          </div>
+          <ul class="professional-list">
+            <li class="list-item">
+              <h3>5+</h3>
+              <span>Years of<br>Experience</span>
+            </li>
+            <li class="list-item">
+              <h3>5K+</h3>
+              <span>Happy<br>Customers</span>
+            </li>
+            <li class="list-item">
+              <h3>5+</h3>
+              <span>Success<br>skills</span>
+            </li>
+          </ul>
+          <a href="#" class="btn">Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----- education ----->
+  <section class="education section" id="education">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Education</h1>
+      <h2 class="section-title-02">學歷經歷</h2>
+      <div class="content">
+        <div class="education-info">
+          <div class="education">
+            <h4><label>學歷</label></h4>
+            <ul class="education-list">
+              <li class="item">
+                <p class="year"><span>逢甲大學</span><span>2023/10 - 2024/02</span></p>
+                <p>Figma&前端工程專班</p>
+                <p><span class="detail">・ 網頁互動雛形製作<br>・ 商業網站團體開發專題</span></p>
+
+              </li>
+              <li class="item">
+                <p class="year"><span>國立台中科技大學</span><span>2010 - 2015</span></p>
+                <p>應用日本語學系</p>
+                <p> <span class="detail">・ 102學年度學會執行秘書<br>・ 日文話劇比賽最佳編劇獲獎</span></p>
+              </li>
+            </ul>
+          </div>
+          <div class="education">
+            <h4><label>文書繪圖</label></h4>
+            <ul class="education-list">
+              <li class="item">
+                <p>語言</p>
+                <div class="info">
+                  <img src="./assets/icon/zh.svg" alt="zh">
+                  <img src="./assets/icon/jp.svg" alt="jp">
+                  <img src="./assets/icon/en.svg" alt="en">
+                </div>
+              </li>
+              <li class="item">
+                <p>文書處理</p>
+                <div class="info">
+                  <img src="./assets/icon/word.svg" alt="word">
+                  <img src="./assets/icon/powerpoint.svg" alt="powerpoint">
+                  <img src="./assets/icon/excel.svg" alt="excel">
+                </div>
+              </li>
+              <li class="item">
+                <p>繪圖軟體</p>
+                <div class="info">
+                  <img src="./assets/icon/illustrator.svg" alt="illustrator">
+                  <img src="./assets/icon/photoshop.svg" alt="photoshop">
+                  <img src="./assets/icon/figma.svg" alt="photoshop">
+                  <img src="./assets/icon/gitmind.svg" alt="gitmind">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="education">
+            <h4><label>前湍工程</label></h4>
+            <ul class="education-list">
+              <li class="item">
+                <p>程式語言</p>
+                <div class="info">
+                  <img src="./assets/icon/html.svg" alt="html">
+                  <img src="./assets/icon/css3.svg" alt="css3">
+                  <img src="./assets/icon/sass.svg" alt="sass">
+                  <img src="./assets/icon/javascript.svg" alt="javascript">
+                </div>
+              </li>
+              <li class="item">
+                <p>框架語言</p>
+                <div class="info">
+                  <img src="./assets/icon/bootstrap.svg" alt="bootstrap">
+                  <img src="./assets/icon/tailwindcss.svg" alt="tailwindcss">
+                  <img src="./assets/icon/vue.svg" alt="vue">
+                </div>
+              </li>
+              <li class="item">
+                <p>版本控制</p>
+                <div class="info">
+                  <img src="./assets/icon/git.svg" alt="git">
+                  <img src="./assets/icon/github.svg" alt="github">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1 class="section-title-01">Experience</h1>
+      <h2 class="section-title-02">工作經歷</h2>
+      <div class="content">
+        <div class="education-info">
+          <div class="experience-card">
+            <div class="upper">
+              <h3>西點蛋糕師</h3>
+              <h5>全職人員</h5>
+              <span>2023/04 - 2023/07</span>
+            </div>
+            <div class="hr"></div>
+            <h4><label>鹿檬甜點工作室</label></h4>
+            <p>．使用合適材料製作西式點心<br>
+              ．協助新品開發製作
+            </p>
+          </div>
+          <div class="experience-card">
+            <div class="upper">
+              <h3>煎台製餅人員</h3>
+              <h5>全職人員</h5>
+              <span>2021/05 - 2023/02</span>
+            </div>
+            <div class="hr"></div>
+            <h4><label>青畑國際股份有限公司</label></h4>
+            <p>．使用合適材料製作中式點心<br>
+              ．櫃台接待及收銀</p>
+          </div>
+          <div class="experience-card">
+            <div class="upper">
+              <h3>行政櫃台＆包膜師</h3>
+              <h5>全職人員</h5>
+              <span>2017/11 - 2021/03</span>
+            </div>
+            <div class="hr"></div>
+            <h4><label>鼎威科技館</label></h4>
+            <p>．商品銷售及產品基本功能測試<br>
+              ．3C產品貼膜及全機包膜</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----- skills ----->
+  <section class="skills section" id="skills">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Skill</h1>
+      <h2 class="section-title-02">技能專長</h2>
+      <div class="content">
+        <ul class="skills-list">
+          <li class="skills-container">
+            <div class="skills-card">
+              <img src="./assets/icon/prototype.png" alt="">
+              <h3>網頁互動雛形</h3>
+              <h4>Website Prototype</h4>
+              <div class="learn-more-btn">Learn More <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="skills-modal flex-center">
+              <div class="skills-modal-body">
+                <i class="fa-solid fa-xmark modal-close-btn"></i>
+                <h3>網頁互動雛形</h3>
+                <h4>Web Prototype</h4>
+                <p>使用Figma製作網頁初期線框圖，依照專案需求製作設計網站樣式，並且加上互動條件，呈現完整的網頁雛形。</p>
+                <h4>我將為團隊做到</h4>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i> 使用者介面設計</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 網頁線框圖 Wireframe</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 網頁排版設計 Mockup</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 網頁互動雛形 Prototype</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="skills-container">
+            <div class="skills-card">
+              <img src="./assets/icon/web.png" alt="">
+              <h3>網頁開發</h3>
+              <h4>Web Development</h4>
+              <div class="learn-more-btn">Learn More <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="skills-modal flex-center">
+              <div class="skills-modal-body">
+                <i class="fa-solid fa-xmark modal-close-btn"></i>
+                <h3>網頁開發</h3>
+                <h4>Web Development</h4>
+                <p>使用HTML、CSS、Javascript等程式語言製作網頁，也能使用Github達成團隊專案開發。</p>
+                <h4>我將為團隊做到</h4>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i> 程式語言編寫</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 框架程式開發</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 團隊專案製作</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Git版本控制</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="skills-container">
+            <div class="skills-card">
+              <img src="./assets/icon/photo.png" alt="">
+              <h3>圖片編輯</h3>
+              <h4>Picture Editing</h4>
+              <div class="learn-more-btn">Learn More <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="skills-modal flex-center">
+              <div class="skills-modal-body">
+                <i class="fa-solid fa-xmark modal-close-btn"></i>
+                <h3>圖片編輯</h3>
+                <h4>Picture Editing</h4>
+                <p>任何網頁都需要精美的圖片做點綴，讓網頁更加完整，也可以讓人有舒適的視覺體驗。</p>
+                <h4>我將為團隊做到</h4>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i> 修改調整圖片</li>
+                  <li><i class="fa-solid fa-circle-check"></i> icon編輯製作</li>
+                  <li><i class="fa-solid fa-circle-check"></i> banner橫幅製作</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 商業圖片編輯</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="skills-container">
+            <div class="skills-card">
+              <img src="./assets/icon/proposal.png" alt="">
+              <h3>企劃撰寫</h3>
+              <h4>Proposal Writing</h4>
+              <div class="learn-more-btn">Learn More <i class="fa-solid fa-arrow-right-long"></i></div>
+            </div>
+            <div class="skills-modal flex-center">
+              <div class="skills-modal-body">
+                <i class="fa-solid fa-xmark modal-close-btn"></i>
+                <h3>企劃撰寫</h3>
+                <h4>Proposal Writing</h4>
+                <p>在開啟一個新專案時，最重要的就是撰寫企劃書，它將統整專案內容，讓團隊可以井然有序地進行專案製作。</p>
+                <h4>我將為團隊做到</h4>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i> 定義問題與目標</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 整理並分析情報</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 激發創意</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 撰寫企劃案</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!----- project ----->
+  <section class="project section" id="project">
+    <div class="container flex-center">
+      <h1 class="section-title-01">My Project</h1>
+      <h2 class="section-title-02">專案作品</h2>
+      <div class="content">
+        <div class="project-list">
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>快樂星網站改版</h3>
+                <span>企劃撰寫</span>
+              </div>
+              <img src="./assets/image/preview/happystar_project.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>快樂星網站改版</h3>
+                  <h4>企劃撰寫</h4>
+                  <img src="./assets/image/happystar_redesign/03.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/04.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/05.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/06.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/07.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/08.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/09.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/10.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/11.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/12.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/13.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/14.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/15.jpeg" alt="">
+                  <img src="./assets/image/happystar_redesign/16.jpeg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>快樂星網站改版</h3>
+                <span>網站互動原型</span>
+              </div>
+              <img src="./assets/image/preview/happystar_prototype.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>快樂星網站改版</h3>
+                  <h4>網站互動原型</h4>
+                  <a href="https://reurl.cc/nrqolX" class="btn" target="_blank">View On Figma <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <img src="./assets/image/project/happystar_Phone.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>快樂星網站改版</h3>
+                <span>響應式網頁</span>
+              </div>
+              <img src="./assets/image/preview/happystar_web_redesign.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>快樂星網站改版</h3>
+                  <h4>響應式網頁</h4>
+                  <a href="https://112-10-fcu-happystar.dev-hub.io/" class="btn" target="_blank">View Website <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <img src="./assets/image/project/happystar.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Microsoft官網</h3>
+                <span>網頁設計應用</span>
+              </div>
+              <img src="./assets/image/preview/microsoft.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>Microsoft官網</h3>
+                  <h4>網頁設計應用</h4>
+                  <a href="#" class="btn" target="_blank">View Website <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <img src="./assets/image/project/microsoft.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>餐廳形象網頁</h3>
+                <span>網頁設計應用</span>
+              </div>
+              <img src="./assets/image/preview/restaurant_web.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>餐廳形象網頁</h3>
+                <h4>網頁設計應用</h4>
+                  <a href="#" class="btn" target="_blank">View Website <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <img src="./assets/image/project/restaurant_web.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>電腦版影音平台</h3>
+                <span>網頁設計應用</span>
+              </div>
+              <img src="./assets/image/preview/movie_web.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>電腦版影音平台</h3>
+                  <h4>網頁設計應用</h4>
+                  <a href="#" class="btn" target="_blank">View Website <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <img src="./assets/image/project/movie_web.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>商家點餐網頁</h3>
+                <span>Bootstrap框架應用</span>
+              </div>
+              <img src="./assets/image/preview/restaurant_ec.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>商家點餐網頁</h3>
+                  <h4>Bootstrap框架應用</h4>
+                  <a href="#" class="btn" target="_blank">View Website <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <img src="./assets/image/project/restaurant_ec.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>36小時天氣預報</h3>
+                <span>Javascript進階應用</span>
+              </div>
+              <img src="./assets/image/preview/weather.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>36小時天氣預報</h3>
+                  <h4>Javascript進階應用</h4>
+                  <a href="#" class="btn" target="_blank">View Website <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <img src="./assets/image/project/weather.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>色弱遊戲</h3>
+                <span>Javascript進階應用</span>
+              </div>
+              <img src="./assets/image/preview/color_game.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>色弱遊戲</h3>
+                  <h4>Javascript進階應用</h4>
+                  <a href="#" class="btn" target="_blank">View Website <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <img src="./assets/image/project/color-game.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-card-container">
+            <div class="img-card">
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>BMI身體質量指數</h3>
+                <span>Javascript基礎應用</span>
+              </div>
+              <img src="./assets/image/preview/BMI_calculator.jpg" alt="">
+            </div>
+            <div class="project-modal flex-center">
+              <div class="project-modal-body">
+                <i class="fa-solid fa-xmark project-close-btn"></i>
+                <div class="info">
+                  <h3>BMI身體質量指數</h3>
+                  <h4>Javascript基礎應用</h4>
+                  <a href="#" class="btn" target="_blank">View Website <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <img src="./assets/image/project/BMI-calculator.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="certificate sub-section">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Certificate</h1>
+        <h2 class="section-title-02">證書證照</h2>
+        <div class="content">
+          <div class="swiper certificate-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex-center">
+                <div class="certificate-img">
+                  <img src="./assets/image/certificate-swiper.png" alt="">
+                </div>
+                <div class="certificate-details">
+                  <h3>Figma介面設計＆前端工程專班結訓證書</h3>
+                  <p><i class="fa-solid fa-check"></i>Figma互動雛形製作與UX<br>
+                    <i class="fa-solid fa-check"></i>HTML、CSS、JavaScript程式進階實作<br>
+                    <i class="fa-solid fa-check"></i>CSS前端框架應用與Sass/SCSS實作<br>
+                    <i class="fa-solid fa-check"></i>VUE.JS框架實作與商業網站團體開發專題
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="certificate-img">
+                  <img src="./assets/image/certificate-swiper.png" alt="">
+                </div>
+                <div class="certificate-details">
+                  <h3>日本語能力試驗JLPT N2</h3>
+                  <p><i class="fa-solid fa-check"></i>閱讀報紙、雜誌所刊載之各類報導與解說<br>
+                    <i class="fa-solid fa-check"></i>閱讀一般讀物，並可理解事情的脈絡及其表達意涵<br>
+                    <i class="fa-solid fa-check"></i>在大部分的情境中，能聽懂近常速且連貫之對話
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide flex-center">
+                <div class="certificate-img">
+                  <img src="./assets/image/certificate-swiper.png" alt="">
+                </div>
+                <div class="certificate-details">
+                  <h3>102學年度學會執行秘書</h3>
+                  <p><i class="fa-solid fa-check"></i>監督系學會活動工作與執行<br>
+                    <i class="fa-solid fa-check"></i>協助管理各部門及資源與人力分配<br>
+                    <i class="fa-solid fa-check"></i>辦理各項跨部會之全面性業務<br>
+                    <i class="fa-solid fa-check"></i>代理會長無法出席之任何事宜
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----- contact ----->
+  <section class="contact section" id="contact">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Contact Me</h1>
+      <h2 class="section-title-02">與我聯繫</h2>
+      <div class="content">
+        <div class="contact-info">
+          <h2>聯絡資訊</h2>
+          <ul class="contact-list">
+            <li>
+              <h3 class="contact-list-title"><i class="fa-solid fa-phone"></i> 電話號碼</h3>
+              <span><a href="tel:+886-935692786">0935692786 <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+            </li>
+            <li>
+              <h3 class="contact-list-title"><i class="fa-solid fa-envelope"></i> 電子郵件</h3>
+              <span><a href="mailto:shizuna.sugano@gmail.com">shizuna.sugano@gmail.com <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+            </li>
+            <li>
+              <h3 class="contact-list-title"><i class="fa-solid fa-comments"></i>通訊軟體</h3>
+              <span><a href="https://line.me/ti/p/9AOfpqGUdn">Line ID : heyshizuna <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <p>你也可以使用線上表單聯絡我<br><span>我將會盡快回覆你的訊息！</span></p>
+          <form action="" class="contact-form-body">
+            <div class="first-row">
+              <input type="text" placeholder="你的名字">
+            </div>
+            <div class="second-row">
+              <input type="email" placeholder="電子郵件">
+              <input type="text" placeholder="主旨">
+            </div>
+            <div class="third-row">
+              <textarea name="message" id="" rows="7" placeholder="訊息內容"></textarea>
+            </div>
+            <button class="btn" type="submit">寄出郵件 <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----- footer ----->
+  <footer>
+    <div class="footer-container">
+      <div class="about group">
+        <h2>Chloe</h2>
+        <p>Web Designer / Frontend Developer</p>
+        <a href="#about">關於怡靜</a>
+      </div>
+      <div class="hr"></div>
+      <div class="info group">
+        <h3>更多資訊</h3>
+        <ul>
+          <li><a href="#education">學歷經歷</a></li>
+          <li> <a href="#skills">技能專長</a></li>
+          <li> <a href="#project">專案作品</a></li>
+          <li> <a href="#contact">與我聯繫</a></li>
+        </ul>
+      </div>
+      <div class="hr"></div>
+      <div class="link group">
+        <h3>我的連結</h3>
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright group">
+      <p>© 2024 by YiJing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./JS/swiper-bundle.min.js"></script>
+  <script src="./JS/script.js"></script>
+
+</body>
+
+</html>
