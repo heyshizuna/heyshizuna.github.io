@@ -20,14 +20,12 @@ skillCloseBtns.forEach((skillCloseBtn) => {
     skillModals.forEach((skillModal) => {
       skillModal.classList.remove("active");
     });
-    bodyFlow.style.overflow = "visible";
   });
 });
 
 
 function openSkillmodal(skillClick) {
   skillModals[skillClick].classList.add("active");
-  bodyFlow.style.overflow = "hidden";
 }
 
 // project //
@@ -162,24 +160,20 @@ ScrollReveal({
   delay: 100,
 });
 
-ScrollReveal().reveal(".media-icons i, .contact-info, .contact-list li", {
+ScrollReveal().reveal(".media-icons i, .contact-info, .contact-list li,.contact-form p, .section-title-01, .section-title-02", {
   delay: 300,
-  origin: "left",
-  interval: 200,
+  origin: "top",
+  interval: 100,
 });
-ScrollReveal().reveal(".about .professional-list li, .contact-form p ", {
+
+ScrollReveal().reveal(".hero .info,.hero .info h3, .hero .info p", {
   delay: 300,
-  origin: "right",
-  interval: 200,
+  origin: "bottom",
 });
-ScrollReveal().reveal(".hero .info h2, .section-title-01, .section-title-02", {
-  delay: 300,
-  origin: "left",
-});
-ScrollReveal().reveal(".hero-img,.about-img", { delay: 300, origin: "bottom" });
+ScrollReveal().reveal(".hero-img,.about-img", { delay: 300, origin: "top" });
 ScrollReveal().reveal(
-  ".hero .info h3, .hero .info p,.about-info .description, .certificate-swiper,.contact-form-body input,.contact-form-body textarea",
-  { delay: 400, origin: "right" }
+  ".about-info .description, .certificate-swiper,.contact-form-body input,.contact-form-body textarea",
+  { delay: 400, origin: "top" }
 );
 ScrollReveal().reveal(" .footer-container .group", {
   delay: 300,
@@ -191,11 +185,11 @@ ScrollReveal().reveal(
   ".img-card,.education-info .education, .experience-card,.skills-card",
   {
     delay: 400,
-    origin: "bottom",
+    origin: "top",
     interval: 200,
   }
 );
 ScrollReveal().reveal(
   ".hero .info .btn, .about .about-info .btn,.contact-form-body button",
-  { delay: 500, origin: "bottom" }
+  { delay: 500, origin: "top" }
 );

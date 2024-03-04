@@ -39,27 +39,6 @@
             line-height: 1.5;
           }
         }
-        .professional-list {
-          display: flex;
-          justify-content: space-between;
-          column-gap: 30px;
-          .list-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            column-gap: 15px;
-            margin-bottom: 20px;
-            h3 {
-              font-size: 2em;
-              font-family: main-font;
-              font-weight: 500;
-            }
-            span {
-              color: var(--third-color);
-              font-size: $small-font-size;
-            }
-          }
-        }
       }
     }
   }
