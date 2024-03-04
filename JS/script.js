@@ -20,12 +20,14 @@ skillCloseBtns.forEach((skillCloseBtn) => {
     skillModals.forEach((skillModal) => {
       skillModal.classList.remove("active");
     });
+    bodyFlow.style.overflow = "visible";
   });
 });
 
 
 function openSkillmodal(skillClick) {
   skillModals[skillClick].classList.add("active");
+  bodyFlow.style.overflow = "hidden";
 }
 
 // project //
